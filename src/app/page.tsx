@@ -5,12 +5,10 @@ import { SearchIcon } from '@/icons'
 import BalanceStatistic from '@/components/BalanceStatistic/BalanceStatistic'
 import CreditCard from '@/components/CreditCard/CreditCard'
 import ListItemsAndChat from '@/components/ListItemsAndChat/ListItemsAndChat'
+import { BalanceStatisticCard } from '@/components/BalanceStatistic'
 
-// having a bug when working with reactchart so this is the only solution to avoid the error
-export const BalanceStatisticCard = dynamic(
-  ()=>import('../components/BalanceStatistic/BalanceStatistic'),
-  {ssr:false}
-)
+
+
 export default function Home() {
   return (
     <main className={style.main}>
