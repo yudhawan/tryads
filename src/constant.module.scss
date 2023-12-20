@@ -1,0 +1,26 @@
+$black:#13101B;
+$white:#FFFFFF;
+$white-2:#F7F6FC;
+$white-3:#F7F7F9;
+$blue:#545DE6;
+$blue-2:#C7CAFF;
+$blue-3:#B9BBFF;
+$yellow:#FFA70F;
+$lumia:#FFE2BE;
+$red:#EF5D51;
+$gray:#E8E8E8;
+@mixin defaultBody(){
+    margin-left: 5vw;
+    background-color: $white-2; 
+    width: 100%;
+}
+@mixin cardContainer{
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+    height: 250px;
+}
+@mixin titleCard(){
+    margin:0;
+    font-weight: 500;
+}

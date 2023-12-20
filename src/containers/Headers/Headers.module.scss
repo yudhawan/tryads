@@ -1,0 +1,79 @@
+@import '../../constant.module.scss';
+.header{
+    background-color: $white;
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 48px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    gap: 90px;
+}
+.infoBlockHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    h1{
+        margin: 0;
+        font-size: 40px;
+    }
+}
+.navigationContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: $white-2;
+    height: fit-content;
+    padding-block: 8px;
+    padding-inline: 4px;
+    border-radius: 20px;
+}
+.iconLink{
+    width: 24px;
+    height: 24px;
+    display: block;
+    padding: 4px;
+    border-radius: 100%;
+}
+.iconLink:hover{
+    background-color: $blue;
+    svg>path{
+        stroke: white;
+    }
+}
+.iconLinkChat{
+    width: 24px;
+    height: 24px;
+    display: block;
+    padding: 8px;
+    border-radius: 100%;
+}
+.iconLinkChat:hover{
+    background-color: $lumia;
+}
+.iconUser{
+    padding: 4px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue-3;
+}
+.iconLogout{
+    width: 24px;
+    height: 24px;
+    display: block;
+    padding: 8px;
+    border-radius: 100%;
+}
+.iconLogout:hover{
+    background-color: $red;
+    svg>path{
+        stroke: $white;
+    }
+}

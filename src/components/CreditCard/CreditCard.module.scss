@@ -1,0 +1,33 @@
+@import '../../constant.module.scss';
+
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: $blue;
+    justify-content: space-between;
+    @include cardContainer;
+    width: 450px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    h1{
+        margin: 0;
+        font-weight: 600;
+        color: $white;
+    }
+    svg{
+        width: 70px;
+        height: fit-content;
+        margin-top: -16px;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}

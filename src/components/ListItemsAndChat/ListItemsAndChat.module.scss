@@ -1,0 +1,81 @@
+@import '../../constant.module.scss';
+.main{
+    display: flex;
+    width: 100%
+}
+.mainContainer{
+    @include cardContainer;
+    max-width: unset;
+    width: 100%;
+    background-color: $white;
+    border-radius: 20px 0px 0px 20px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column
+}
+.mainContainerRight{
+    @include cardContainer;
+    max-width: unset;
+    width: 100%;
+    background-color: $white;
+    border-radius: 0px 20px 20px 0px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column
+}
+.timeContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        p{
+            margin: 0;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        span{
+            color: gray;
+            font-size: 16px;
+        }
+        
+    }
+}
+.arrowRight{
+    width: 20px;
+    transform: rotate(90deg);
+    path{stroke:gray;}
+}
+.divide{
+    background-color: $gray;
+    width: 2px;
+    height: 100%;
+}
+.title{
+    @include titleCard
+}
+.barInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        gap: 8px;
+        span{
+            color: gray;
+            font-size: 12px;
+        }
+        p{
+            margin: 0;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+    button{
+        background-color: transparent;
+        border: unset;
+        font-weight: 600;
+    }
+}
