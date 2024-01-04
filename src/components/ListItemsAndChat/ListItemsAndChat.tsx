@@ -75,14 +75,14 @@ function ListItemsAndChat() {
             <p className={style.title}>Esther Howard</p>
             <ul className={style.chatListContainer}>
                 {
-                    chats.map(val=>{
+                    chats.map((val,index)=>{
                         if(val.from==='Jhon') return(
-                            <li className={style.chatList+' '+style.chatListCurrentUser}>
+                            <li className={style.chatList+' '+style.chatListCurrentUser} key={index}>
                                 <Image src={'https://cdn-icons-png.flaticon.com/512/5556/5556468.png'} width={40} height={40} alt={val.from} className={style.userImage} />
                                 <span className={style.currentuser}>{val.content}</span>
                             </li>
                         )
-                        return <li className={style.chatList}>
+                        return <li className={style.chatList} key={index}>
                             <Image src={'https://cdn-icons-png.flaticon.com/512/6075/6075696.png'} width={40} height={40} alt={val.from} className={style.userImage} />
                             <span className={style.userDestination}>{val.content}</span>
                         </li>
