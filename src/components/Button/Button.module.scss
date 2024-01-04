@@ -1,0 +1,10 @@
+@import '../../constant.module.scss';
+.main{
+    background-color: $blue;
+    color: $white;
+    border-radius: 10px;
+    border: none;
+    text-transform: capitalize;
+    padding: 8px 12px;
+    cursor: pointer;
+}

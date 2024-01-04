@@ -1,0 +1,70 @@
+@import '../../constant.module.scss';
+
+.main{
+    @include columnCenter;
+    @include cardContainer;
+    width: calc(50% - 40px - 10px);
+    gap: 16px;
+    @media screen and (max-width: $notebook) {
+        width: 100%;
+    }
+}
+.headInfo{
+    @include rowCenter;
+    justify-content: space-between;
+    width: 100%
+}
+.filterContainer{
+    @include rowCenter;
+    gap: 10px;
+    span{
+        cursor: pointer;
+    }
+    span:hover:first-child{
+        text-decoration: underline
+    }
+    span:hover:last-child{
+        text-decoration: underline
+    }
+}
+.title{
+    @include titleCard(600);
+}
+.labelTitle{
+    @include titleCard(500,14px);
+}
+.label{
+    @include labelText;
+}
+.listContainer{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    height: 250px;
+    overflow-y: scroll
+}
+.listItem{
+    @include rowCenter(space-between,center);
+    padding-block: 16px;
+    border-bottom: 1px solid $gray;
+    
+}
+.userImage{
+    border-radius: 100%;
+}
+.itemInfo{
+    @include rowCenter;
+    gap: 10px;
+}
+.infoName{
+    @include columnCenter;
+    gap: 4px;
+}
+.actionContainer{
+    @include rowCenter(flex-start,center);
+    gap: 16px;
+}
+.threeDot{
+    position: unset;
+}

@@ -1,0 +1,36 @@
+@import '../../constant.module.scss';
+.main{
+    @include cardContainer;
+    @include columnCenter;
+    width: calc(50% - 40px - 30px);
+    gap: 16px;
+    @media screen and (max-width: $notebook) {
+        width: 100%;
+    }
+}
+.headerInfo{
+    @include rowCenter(space-between,center);
+    position: relative;
+    width: 100%
+}
+.title{
+    @include titleCard;
+}
+.menu{
+    top: 0;
+    right: 0;
+}
+.chartContainer{
+    @include columnCenter(center,center);
+    width: 100%;
+}
+.bendContainer{
+    width: 200px;
+  height: 100px;
+  background-color: red;
+  border-top-left-radius: 50% 15px;
+  border-top-right-radius: 50% 15px;
+  border-bottom-left-radius: 50% 15px;
+  border-bottom-right-radius: 50% 15px;
+  transform: skewY(-10deg);
+}

@@ -1,12 +1,11 @@
 @import '../../constant.module.scss';
 
 .main{
-    display: flex;
-    flex-direction: column;
-    background-color: $blue;
-    justify-content: space-between;
-    @include cardContainer;
+    background-color: $blue!important;
     width: 450px;
+    @media screen and (max-width: $notebook) {
+        width: 100%;
+    }
 }
 .header{
     display: flex;

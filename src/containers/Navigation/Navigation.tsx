@@ -5,8 +5,8 @@ import { LinkProps } from '@/types'
 import { getLinks } from '@/services/linkServices'
 import IconComponent from '@/components/IconComponent/IconComponent'
 import { ChatIcon, LogoutIcon } from '@/icons'
-import style from './Headers.module.scss'
-function Headers() {
+import style from './Navigation.module.scss'
+function Navigation() {
   return (
     <header className={style.header}>
       <section className={style.infoBlockHeader}>
@@ -28,4 +28,4 @@ function Headers() {
   )
 }
 
-export default Headers
+export default Navigation

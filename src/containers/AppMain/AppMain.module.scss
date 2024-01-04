@@ -4,4 +4,23 @@
     display: flex;
     width: 100%;
     max-height: 100dvh;
+    position: relative;
+}
+.buttonChevron{
+    display: none;
+    @media screen and (max-width: $tablet){
+        display: block;
+        position: absolute;
+        top: 50vh;
+        right: 0;
+        transform: rotate(-90deg);
+        background-color: transparent;
+        z-index: 60;
+        border: unset;
+        border-radius: 20px;
+        svg{
+            width: 30px;
+            stroke: $blue;
+        }
+    }
 }

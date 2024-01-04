@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import style from './BalanceStatistic.module.scss'
 import Image from 'next/image'
 import { Bar, BarChart, Legend, Line, LineChart, Rectangle, Tooltip, XAxis, YAxis } from 'recharts'
 import IconComponent from '../IconComponent/IconComponent'
 import { ChevronIcon } from '@/icons'
+import style from './BalanceStatistic.module.scss'
 function BalanceStatistic() {
     const data = [{val:100},{val:200},{val:700},{val:1000},{val:600},{val:100},{val:100},{val:100},]
     const data2 = [
@@ -60,6 +60,7 @@ function BalanceStatistic() {
           width={300}
           height={200}
           data={data2}
+          className={style.mobileChart}
         >
             <XAxis dataKey="name" />
             <YAxis tickFormatter={(val)=> '$'+val} />

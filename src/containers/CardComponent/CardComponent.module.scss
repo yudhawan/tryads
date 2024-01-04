@@ -1,0 +1,12 @@
+@import '../../constant.module.scss';
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include cardContainer;
+    position: relative;
+    background-color: $white;
+}
+.withBorder{
+    border: 1px solid $gray;
+}

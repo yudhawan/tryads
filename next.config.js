@@ -7,6 +7,11 @@ const nextConfig = {
             hostname: 'robohash.org',
             port: '',
           },
+          {
+            protocol: 'https',
+            hostname: 'cdn-icons-png.flaticon.com',
+            port: '',
+          },
         ],
       },
 }

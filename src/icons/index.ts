@@ -9,6 +9,12 @@ import WalletIcon from './wallet.svg'
 import SearchIcon from './search.svg'
 import ChevronIcon from './chevronUp.svg'
 import VisaIcon from './visa.svg'
+import RightArrowIcon from './rightArrow.svg'
+import MenuIcon from './menu.svg'
+import XIcon from './x.svg'
+import BankNotesIcon from './banknotes.svg'
+import SmileIcon from './smile.svg'
+import FileIcon from './file.svg'
 
 export {
     BellsIcon,
@@ -21,5 +27,11 @@ export {
     WalletIcon,
     SearchIcon,
     ChevronIcon,
-    VisaIcon
+    VisaIcon,
+    RightArrowIcon,
+    MenuIcon,
+    XIcon,
+    BankNotesIcon,
+    SmileIcon,  
+    FileIcon,
 }

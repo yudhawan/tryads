@@ -1,8 +1,12 @@
 @import '../../constant.module.scss';
 .main{
     display: flex;
-    width: 100%
+    width: 100%;
+    @media screen and (max-width: $notebook) {
+        flex-direction: column;
+    }
 }
+.labelmedium{@include labelText(14px)}
 .mainContainer{
     @include cardContainer;
     max-width: unset;
@@ -11,7 +15,11 @@
     border-radius: 20px 0px 0px 20px;
     gap: 24px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    @media screen and (max-width: $notebook) {
+        border-radius: 20px 20px 0px 0px;
+        width: unset;
+    }
 }
 .mainContainerRight{
     @include cardContainer;
@@ -21,7 +29,13 @@
     border-radius: 0px 20px 20px 0px;
     gap: 24px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    position: relative;
+    @media screen and (max-width: $notebook) {
+        border-radius: 0px 0px 20px 20px;
+        height: 100%;
+        width: unset;
+    }
 }
 .timeContainer{
     display: flex;
@@ -34,12 +48,7 @@
             margin: 0;
             font-size: 30px;
             font-weight: 600;
-        }
-        span{
-            color: gray;
-            font-size: 16px;
-        }
-        
+        }        
     }
 }
 .arrowRight{
@@ -51,6 +60,9 @@
     background-color: $gray;
     width: 2px;
     height: 100%;
+    @media screen and (max-width: $notebook) {
+        display: none;
+    }
 }
 .title{
     @include titleCard
@@ -78,4 +90,113 @@
         border: unset;
         font-weight: 600;
     }
+}
+.listContiner{
+    list-style-type: none;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 200px 200px;
+    grid-gap: 16px;
+    padding-inline: 8px;
+    @media screen and (max-width: $notebook) {
+        grid-template-columns: 40% 40%;
+        grid-gap: 12px;
+    }
+    @media screen and (max-width: $mobile2) {
+        grid-template-columns: 100%;
+        grid-gap: 12px;
+    }
+}
+.list{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: $white-2;
+    padding: 10px 14px;
+    border-radius: 10px;
+    gap: 4px;
+}
+.menu{
+    right: 12px !important;
+    top: calc(50% - 5px) !important;
+}
+.chatListContainer{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: calc(100% - 40px - 20px - 93px);
+    overflow-y: scroll;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media screen and (max-width: $notebook) {
+        justify-content: flex-end;
+    }
+}
+.chatList{
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+.userImage{
+    border-radius: 100%;
+}
+.userText{
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.userDestination{
+    background-color: $white-2;
+    color: $black;
+    padding: 10px;
+    border-radius: 8px 8px 8px 0px;
+}
+.chatListCurrentUser{
+    // justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+.currentuser{
+    background-color: $blue;
+    color: $white;
+    padding: 10px;
+    border-radius: 8px 8px 0px 8px;
+}
+.inputTextContainer{
+    width: calc(100% - 40px - 20px); // 100% - padding-inline - padding inside container 10px
+    display: flex;
+    flex-direction: column;
+    background-color: $white-3;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+    gap: 8px;
+    @media screen and (max-width: $notebook) {
+        justify-content: flex-end;
+        width: calc(100% - 28px - 30px);
+    }
+}
+.inputText{
+    background-color: transparent;
+    border: none;
+    resize: none;
+}
+.inputText:focus{
+    outline: none;
+}
+.actionTextContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconActionContainer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.iconAction{
+    width: 20px;
 }

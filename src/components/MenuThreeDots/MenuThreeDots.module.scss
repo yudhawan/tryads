@@ -1,0 +1,17 @@
+@import '../../constant.module.scss';
+.threeDot{
+    @include columnCenter;
+    gap: 2px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    span{
+        width: 2px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $black;
+    }
+}
