@@ -12,7 +12,7 @@ function Analytic() {
         <MenuThreeDots classname={style.menu}/>
       </div>
       <div className={style.chartContainer}>
-        <Image src={'https://cdn-icons-png.flaticon.com/512/3589/3589902.png'} width={100} height={100} alt='chart' />
+        <Image src={'https://cdn-icons-png.flaticon.com/512/3589/3589902.png'} width={300} height={300} alt='chart' />
       </div>
     </CardComponent>
   )
