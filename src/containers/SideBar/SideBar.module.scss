@@ -32,15 +32,15 @@
         display: block;
         position: absolute;
         top: 50vh;
-        left: -10px;
+        left: -16px;
         transform: rotate(90deg);
-        background-color: transparent;
+        background-color: $blue;
         z-index: 60;
         border: unset;
         border-radius: 20px;
         svg{
-            width: 30px;
-            stroke: $blue;
+            width: 24px;
+            stroke: $white;
         }
     }
 }
